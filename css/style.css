@@ -1,0 +1,210 @@
+:root{
+    --titulo: #dc3545;
+    --fondo: #ffbb00;
+    --blanco: #fff;
+    --negro: #000;
+    --grisoscuro: rgb(32, 32, 32);
+    --grisclaro: rgb(248,249,250);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+nav a:hover{    
+    font-weight: 600;
+}
+.main-color{
+    background-color: var(--grisclaro);
+}
+.navegacion-superior-elementos{
+    padding: 1rem;  
+    display: flex;
+    gap: 1.5rem;
+}
+.navegacion-titulo {
+    margin: auto 3rem;
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+}
+.navegacion-titulo-sec{
+    font-weight: 300;  
+}
+.main-cita{
+    padding: 3rem;
+    text-align: center;
+    font-family: 'Lora', serif; 
+}
+.main-cita-autor{
+    font-weight: 600;  
+}
+.tienda-fisica{
+    background-color: var(--negro);
+    padding: 2rem;
+    text-decoration: none;
+    text-align: center;
+    color: var(--blanco);
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.tienda-fisica:hover{
+    background-color: var(--grisoscuro);
+}
+.nexsletter{
+    background-color: var(--fondo);
+    padding: 8rem;
+    text-align: center;
+}
+.newsletter-titulo{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.newsletter-parrafo{
+    padding: 2.5rem;
+}
+.mi-btn{
+    background-color: var(--negro);
+    color: var(--blanco);
+    padding: 1rem 2rem; 
+}
+.mi-btn-a{
+    padding: 2rem 0 1rem 0;
+}
+.mi-btn:hover{
+    background-color: var(--grisoscuro);
+}
+.redes-sociales{
+    padding: 3rem;
+    text-align: center;
+    font-size: 2rem;
+}
+.redes{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-bottom: 4rem;
+}
+.contenedor-titulo{
+    padding: 3rem;
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.icon-whatsapp{
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    background-color: #69be57;
+    padding: 1rem;
+    border-radius: 50%;
+}
+.icon-whatsapp:hover{
+    transform: scale(1.2);
+    transition: all 1s;
+}
+.conteiner-center{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+.card-mod{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.card-title-mod{
+    font-weight: 600;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+.btn-mod{
+    font-size: 14px;
+    padding: 5px 1.5rem;
+    font-weight: 600;
+}
+.card-sombra:hover{
+    box-shadow: 5px 5px 20px 0 rgb(0 0 0 / 10%);
+}
+.active-mod>.page-link, .page-link.active {
+    z-index: 3;
+    color: var(--blanco);
+    background-color: var(--negro);
+    border-color: var(--negro);
+}
+.paginacion{
+    color: #000;
+}
+.paginacion:hover{
+    color: var(--grisoscuro);
+    font-weight: 600;
+}
+.paginacion-mod{
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+}
+.libro-mod{
+    border: none;
+}
+.libro-titulo{
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+.contenedor-tienda-fisica{
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column;
+}
+.mapa{
+    max-width: 80%;
+}
+.col-mod{
+    width: 90%;
+}
+
+@media screen and (max-width: 576px){
+    main, footer, nav{
+        font-size: 14px;
+    }
+    .btn-mod{
+        font-size: 14px;
+    }
+    .contenedor-titulo, .redes-sociales{
+        font-size: 16px;
+    }
+    .contenedor-titulo{
+        padding-top: 0;
+    }
+    .navegacion-titulo{
+        font-size: 14px;
+        margin: auto 1rem;
+    }
+    .nexsletter{
+        padding: 1.9rem;
+    }
+    iframe{
+        max-height: 250px;
+    }
+    .icon-what{
+        width: 25px;
+        height: 25px;
+    }
+    .conteiner-center{
+        margin: 0 auto;
+        padding-bottom: 1rem;
+    }
+}
